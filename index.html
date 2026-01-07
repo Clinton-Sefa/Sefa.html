@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="album-selection-container" id="album-selection-root">
+        <h1>Photo Albums</h1>
+        </div>
+    
+    <div class="gallery-container hidden" id="gallery-root">
+        <a href="#" onclick="showAlbumSelection(event)" class="back-link">&leftarrow; Back to Albums</a>
+        
+        <div class="thumbnail-grid" id="thumbnail-grid-content">
+
+        </div>
+        </div>
+
+    <div id="image-modal" class="modal" onclick="closeModal()">
+        
+        <span class="close">&times;</span>
+        
+        <div class="modal-content">
+            
+            <a class="prev" onclick="plusSlides(-1, event)">&#10094;</a>
+            
+            <img id="modal-image" src="" alt="Large image view">
+            <p id="modal-caption"></p>
+            
+            <a class="next" onclick="plusSlides(1, event)">&#10095;</a>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
